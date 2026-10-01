@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Seseorang yang Spesial ❤️</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #ff5c8a, #55152f 45%, #10000a);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.5);
+}
+
+.heart {
+    font-size: 65px;
+
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+}
+
+h1 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.subtitle {
+    color: #ffd5e1;
+    font-size: 17px;
+}
+
+.message {
+    margin: 25px auto;
+
+    max-width: 700px;
+
+    line-height: 1.8;
+
+    color: #ffe8ef;
+
+    font-size: 16px;
+}
+
+.video-box {
+    margin-top: 25px;
+
+    background: black;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.6);
+}
+
+video {
+    width: 100%;
+    max-height: 500px;
+    display: block;
+}
+
+.buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+button {
+    border: none;
+
+    padding: 13px 18px;
+
+    border-radius: 30px;
+
+    background: #ff477e;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.04);
+
+    background: #ff709a;
+
+    box-shadow:
+        0 8px 20px rgba(255,71,126,0.4);
+}
+
+#text {
+    margin-top: 25px;
+
+    min-height: 70px;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background: rgba(0,0,0,0.2);
+
+    color: #ffe5ed;
+
+    line-height: 1.7;
+}
+
+.footer {
+    margin-top: 25px;
+
+    color: #dcb4c1;
+
+    font-size: 13px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <div class="heart">
+        ❤️
+    </div>
+
+    <h1>
+        Untuk Kamu
+    </h1>
+
+    <div class="subtitle">
+        Seseorang yang sangat berarti ✨
+    </div>
+
+
+    <div class="message">
+
+        Aku mungkin tidak selalu pandai mengatakan
+        apa yang aku rasakan.
+
+        Tapi ada satu hal yang ingin aku sampaikan:
+
+        <br><br>
+
+        Terima kasih karena sudah hadir.
+        Terima kasih untuk setiap senyum,
+        setiap cerita,
+        setiap perhatian,
+        dan setiap momen kecil
+        yang membuat hari terasa lebih indah.
+
+        <br><br>
+
+        Semoga kita selalu bisa menjaga
+        hal-hal baik yang sudah kita punya. ❤️
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- VIDEO BAWAAN                      -->
+    <!-- ================================= -->
+
+    <div class="video-box">
+
+        <video
+            id="myVideo"
+            controls
+            playsinline>
+
+            <!--
+            ======================================
+            GANTI VIDEO DI BARIS src DI BAWAH
+            ======================================
+            -->
+
+            <source
+                id="videoSource"
+                src="mygirl.mp4"
+                type="video/mp4">
+
+            Browser kamu tidak mendukung video.
+
+        </video>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- TOMBOL-TOMBOL                     -->
+    <!-- ================================= -->
+
+    <div class="buttons">
+
+        <button onclick="pesan1()">
+            💗 Untuk Kamu
+        </button>
+
+        <button onclick="pesan2()">
+            🥰 Tentang Kamu
+        </button>
+
+        <button onclick="pesan3()">
+            🌹 Kata Manis
+        </button>
+
+        <button onclick="pesan4()">
+            ✨ Sebuah Pesan
+        </button>
+
+        <button onclick="pesan5()">
+            💌 Buka Pesan
+        </button>
+
+        <button onclick="pesan6()">
+            ❤️ Kenapa Kamu
+        </button>
+
+        <button onclick="pesan7()">
+            ☀️ Selamat Pagi
+        </button>
+
+    </div>
+
+
+    <div id="text">
+
+        Tekan salah satu tombol di atas ❤️
+
+    </div>
+
+
+    <div class="footer">
+
+        Dibuat khusus dengan penuh kasih ❤️
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =====================================
+   KUMPULAN KATA-KATA
+   ===================================== */
+
+function pesan1() {
+
+    document.getElementById("text").innerHTML =
+    "Kamu adalah salah satu alasan kenapa hari-hari biasa bisa terasa lebih istimewa. ❤️";
+
+}
+
+
+function pesan2() {
+
+    document.getElementById("text").innerHTML =
+    "Aku suka caramu menjadi dirimu sendiri. Tidak perlu menjadi siapa-siapa, karena kamu sudah cukup berarti dengan menjadi kamu. 🥰";
+
+}
+
+
+function pesan3() {
+
+    document.getElementById("text").innerHTML =
+    "Kalau senyum kamu bisa disimpan, mungkin aku akan menyimpannya sebagai salah satu hal favoritku. 🌹";
+
+}
+
+
+function pesan4() {
+
+    document.getElementById("text").innerHTML =
+    "Tidak semua hal indah harus sempurna. Kadang yang membuatnya berharga adalah karena kita menjalaninya bersama. ✨";
+
+}
+
+
+function pesan5() {
+
+    document.getElementById("text").innerHTML =
+    "Ada satu pesan sederhana: terima kasih sudah hadir dalam cerita ini. Semoga cerita baiknya masih panjang. 💌";
+
+}
+
+
+function pesan6() {
+
+    document.getElementById("text").innerHTML =
+    "Karena kamu punya cara sendiri untuk membuat sesuatu yang sederhana terasa spesial. ❤️";
+
+}
+
+
+function pesan7() {
+
+    document.getElementById("text").innerHTML =
+    "Selamat pagi. Semoga hari kamu dimulai dengan senyum dan diisi dengan banyak hal baik. ☀️";
+
+}
+
+</script>
+
+
+</body>
+</html>
